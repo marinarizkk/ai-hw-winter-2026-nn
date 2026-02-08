@@ -1,0 +1,94 @@
+MNIST TESTING - MLP, CNN, and Transformer
+======================================================================
+Using device: cpu
+
+Loading test data...
+Test samples: 10000
+
+============================================================
+TESTING: MLP
+============================================================
+✓ Loaded MLP from MLP_model.pth
+
+Testing MLP on 10000 images...
+
+Classification Report for MLP:
+              precision    recall  f1-score   support
+
+           0      0.986     0.993     0.989       980
+           1      0.996     0.996     0.996      1135
+           2      0.988     0.988     0.988      1032
+           3      0.987     0.989     0.988      1010
+           4      0.990     0.980     0.985       982
+           5      0.990     0.982     0.986       892
+           6      0.987     0.993     0.990       958
+           7      0.983     0.984     0.983      1028
+           8      0.990     0.979     0.985       974
+           9      0.973     0.982     0.977      1009
+
+    accuracy                          0.987     10000
+   macro avg      0.987     0.987     0.987     10000
+weighted avg      0.987     0.987     0.987     10000
+
+✓ Results saved to: results/MLP_results.txt
+
+============================================================
+TESTING: CNN
+============================================================
+✓ Loaded CNN from CNN_model.pth
+
+Testing CNN on 10000 images...
+
+Classification Report for CNN:
+              precision    recall  f1-score   support
+
+           0      0.995     0.997     0.996       980
+           1      0.993     0.998     0.996      1135
+           2      0.992     0.998     0.995      1032
+           3      0.991     0.998     0.995      1010
+           4      0.998     0.985     0.991       982
+           5      0.998     0.992     0.995       892
+           6      0.998     0.993     0.995       958
+           7      0.995     0.993     0.994      1028
+           8      1.000     0.988     0.994       974
+           9      0.980     0.996     0.988      1009
+
+    accuracy                          0.994     10000
+   macro avg      0.994     0.994     0.994     10000
+weighted avg      0.994     0.994     0.994     10000
+
+✓ Results saved to: results/CNN_results.txt
+
+============================================================
+TESTING: Transformer
+============================================================
+✓ Loaded Transformer from Transformer_model.pth
+
+Testing Transformer on 10000 images...
+
+Classification Report for Transformer:
+              precision    recall  f1-score   support
+
+           0      0.993     0.993     0.993       980
+           1      0.995     0.991     0.993      1135
+           2      0.975     0.997     0.986      1032
+           3      0.994     0.965     0.979      1010
+           4      0.987     0.989     0.988       982
+           5      0.982     0.981     0.981       892
+           6      0.981     0.993     0.987       958
+           7      0.988     0.977     0.982      1028
+           8      0.963     0.990     0.976       974
+           9      0.987     0.970     0.979      1009
+
+    accuracy                          0.985     10000
+   macro avg      0.985     0.985     0.984     10000
+weighted avg      0.985     0.985     0.985     10000
+
+✓ Results saved to: results/Transformer_results.txt
+
+============================================================
+TESTING SUMMARY
+============================================================
+MLP         : 98.68% (Error: 1.32%, Params: 537,354)
+CNN         : 99.39% (Error: 0.61%, Params: 422,474)
+Transformer : 98.46% (Error: 1.54%, Params: 605,066)

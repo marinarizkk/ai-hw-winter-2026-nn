@@ -1,0 +1,89 @@
+MNIST TRAINING - MLP, CNN, and Transformer
+======================================================================
+Using device: cpu
+
+Loading MNIST data with augmentation...
+Training samples: 54000
+Validation samples: 6000
+Test samples: 10000
+
+============================================================
+TRAINING: MLP
+============================================================
+
+Training MLP...
+Parameters: 537,354
+Epochs: 10
+--------------------------------------------------
+Epoch 1/10: Train Acc: 83.37%, Val Acc: 93.62%
+Epoch 2/10: Train Acc: 90.62%, Val Acc: 94.97%
+Epoch 3/10: Train Acc: 92.03%, Val Acc: 95.82%
+Epoch 4/10: Train Acc: 93.05%, Val Acc: 96.17%
+Epoch 5/10: Train Acc: 93.54%, Val Acc: 96.60%
+Epoch 6/10: Train Acc: 94.50%, Val Acc: 97.50%
+Epoch 7/10: Train Acc: 94.78%, Val Acc: 97.40%
+Epoch 8/10: Train Acc: 94.98%, Val Acc: 97.43%
+Epoch 9/10: Train Acc: 95.20%, Val Acc: 97.50%
+Epoch 10/10: Train Acc: 95.39%, Val Acc: 97.87%
+
+MLP Training Complete!
+Best Validation Accuracy: 97.87%
+Training Time: 886.7 seconds
+Model saved as: MLP_model.pth
+
+============================================================
+TRAINING: CNN
+============================================================
+
+Training CNN...
+Parameters: 422,474
+Epochs: 10
+--------------------------------------------------
+Epoch 1/10: Train Acc: 91.87%, Val Acc: 97.77%
+Epoch 2/10: Train Acc: 97.18%, Val Acc: 97.87%
+Epoch 3/10: Train Acc: 97.76%, Val Acc: 99.02%
+Epoch 4/10: Train Acc: 98.12%, Val Acc: 99.00%
+Epoch 5/10: Train Acc: 98.30%, Val Acc: 98.92%
+Epoch 6/10: Train Acc: 98.87%, Val Acc: 99.13%
+Epoch 7/10: Train Acc: 98.92%, Val Acc: 98.70%
+Epoch 8/10: Train Acc: 98.88%, Val Acc: 99.15%
+Epoch 9/10: Train Acc: 99.01%, Val Acc: 99.17%
+Epoch 10/10: Train Acc: 99.03%, Val Acc: 99.05%
+
+CNN Training Complete!
+Best Validation Accuracy: 99.17%
+Training Time: 1255.1 seconds
+Model saved as: CNN_model.pth
+
+============================================================
+TRAINING: Transformer
+============================================================
+
+Training Transformer...
+Parameters: 605,066
+Epochs: 10
+--------------------------------------------------
+Epoch 1/10: Train Acc: 78.65%, Val Acc: 92.08%
+Epoch 2/10: Train Acc: 90.46%, Val Acc: 92.87%
+Epoch 3/10: Train Acc: 91.94%, Val Acc: 95.08%
+Epoch 4/10: Train Acc: 93.07%, Val Acc: 95.80%
+Epoch 5/10: Train Acc: 93.49%, Val Acc: 95.77%
+Epoch 6/10: Train Acc: 95.42%, Val Acc: 97.35%
+Epoch 7/10: Train Acc: 95.95%, Val Acc: 97.28%
+Epoch 8/10: Train Acc: 96.21%, Val Acc: 97.55%
+Epoch 9/10: Train Acc: 96.28%, Val Acc: 97.37%
+Epoch 10/10: Train Acc: 96.36%, Val Acc: 97.43%
+
+Transformer Training Complete!
+Best Validation Accuracy: 97.55%
+Training Time: 1770.1 seconds
+Model saved as: Transformer_model.pth
+
+============================================================
+TRAINING SUMMARY
+============================================================
+MLP         : Val Acc: 97.87%, Time: 886.7s, Params: 537,354
+CNN         : Val Acc: 99.17%, Time: 1255.1s, Params: 422,474
+Transformer : Val Acc: 97.55%, Time: 1770.1s, Params: 605,066
+
+All models trained successfully!

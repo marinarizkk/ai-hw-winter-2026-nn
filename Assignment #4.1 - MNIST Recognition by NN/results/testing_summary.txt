@@ -1,0 +1,18 @@
+MNIST Testing Summary
+==================================================
+
+MLP:
+  Test Accuracy: 98.68%
+  Error Rate: 1.32%
+  Parameters: 537,354
+
+CNN:
+  Test Accuracy: 99.39%
+  Error Rate: 0.61%
+  Parameters: 422,474
+
+Transformer:
+  Test Accuracy: 98.46%
+  Error Rate: 1.54%
+  Parameters: 605,066
+
