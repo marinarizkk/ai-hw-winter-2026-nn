@@ -1,0 +1,18 @@
+MNIST Training Summary
+==================================================
+
+MLP:
+  Validation Accuracy: 97.80%
+  Training Time: 900.0 seconds
+  Parameters: 537,354
+
+CNN:
+  Validation Accuracy: 99.27%
+  Training Time: 1809.4 seconds
+  Parameters: 422,474
+
+Transformer:
+  Validation Accuracy: 98.67%
+  Training Time: 3770.9 seconds
+  Parameters: 843,402
+
